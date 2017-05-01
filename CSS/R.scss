@@ -1,0 +1,169 @@
+/*
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+*/
+/* 
+    Created on : 29-Apr-2017, 10:11:10
+    Author     : richardwortham
+*/
+
+$bg: #33CCCC;
+
+.slideshow {
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    top: 0px;
+    left: 0px;
+    z-index: 0;
+    list-style: none;
+}
+
+/*.slideshow:after { 
+    //content: 'Some text goes here';
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    height: 40%;
+    width: 100%;
+    //background-color: lightgray;
+    opacity: 0.4;
+    //background: transparent url(../images/pattern.png) repeat top left; 
+}*/
+
+.slideshow {
+
+    li span { 
+        width: 100%;
+        height: 100%;
+        position: absolute;
+        top: 0px;
+        left: 0px;
+        color: transparent;
+        background-size: cover;
+        background-position: 50% 50%;
+        background-repeat: none;
+        opacity: 0;
+        z-index: 0;
+        animation: imageAnimation 36s linear infinite 0s; 
+    }
+    
+    li div {
+        z-index: 1;
+        animation: titleAnimation 36s linear infinite 0s;
+        position: absolute;
+        background-color: rgba(51, 204, 204, 0.7);
+        color: white;
+        font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, Arial, sans-serif;
+        opacity: 0;
+        padding: 6px 20px 6px 20px;
+        font-size: 18px;
+        
+        h4 {
+            margin: 0px;
+            font-size: 40px;
+            font-weight: 200;
+        }
+
+    }
+
+    li:nth-child(1) span { 
+        background-image: url(../images/1.jpg) 
+    }
+    li:nth-child(2) span { 
+        background-image: url(../images/2.jpg);
+        animation-delay: 6s; 
+    }
+    li:nth-child(3) span { 
+        background-image: url(../images/3.jpg);
+        animation-delay: 12s; 
+    }
+    li:nth-child(4) span { 
+        background-image: url(../images/4.jpg);
+        animation-delay: 18s; 
+    }
+    li:nth-child(5) span { 
+        background-image: url(../images/5.jpg);
+        animation-delay: 24s; 
+    }
+    li:nth-child(6) span { 
+        background-image: url(../images/6.jpg);
+        animation-delay: 30s; 
+    }
+
+       
+    li:nth-child(1) div {
+        top: 54%;
+        left: 20%;
+    }
+    
+    li:nth-child(2) div { 
+        animation-delay: 6s;
+        top: 50%;
+        right: 25%;
+    }
+    li:nth-child(3) div { 
+        animation-delay: 12s;
+        top: 37%;
+        left: 35%;
+    }
+    li:nth-child(4) div { 
+        animation-delay: 18s;
+        top: 40%;
+        right: 20%;
+    }
+    li:nth-child(5) div { 
+        animation-delay: 24s; 
+        bottom: 30%;
+        left: 20%;
+    }
+    li:nth-child(6) div { 
+        animation-delay: 30s; 
+        top: 47%;
+        right: 35%;
+    }
+    
+    header {
+        font-family: Segoe UI, Helvetica, Arial, sans-serif;
+        color: white;
+        font-size: 33px;
+        background-color: $bg;
+        height: 225px;
+        width: 165px;
+        position: absolute;
+        right: 14%;
+        top: 70px;
+
+        h3 {
+            position: absolute;
+            font-weight: 100;
+            bottom: 20px;
+            left: 14px;
+            margin-bottom: 0;
+        }
+    }
+    
+
+}
+
+
+@keyframes imageAnimation { 
+    0% { opacity: 0; animation-timing-function: ease-in; }
+    8% { opacity: 1; animation-timing-function: ease-out; }
+    17% { opacity: 1 }
+    25% { opacity: 0 }
+    100% { opacity: 0 }
+}
+
+@keyframes titleAnimation {
+    0% { opacity: 0 }
+    8% { opacity: 1 }
+    17% { opacity: 1 }
+    19% { opacity: 0 }
+    100% { opacity: 0 }
+}
+
+.no-cssanimations .slideshow li span{
+	opacity: 1;
+}
