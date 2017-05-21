@@ -27,90 +27,112 @@ and open the template in the editor.
     opacity: 0.4;
     //background: transparent url(../images/pattern.png) repeat top left; 
 }*/
-.slideshow li span {
-  width: 100%;
-  height: 100%;
-  position: absolute;
-  top: 0px;
-  left: 0px;
-  color: transparent;
-  background-size: cover;
-  background-position: 50% 50%;
-  background-repeat: none;
-  opacity: 0;
-  z-index: 0;
-  animation: imageAnimation 36s linear infinite 0s; }
-.slideshow li div {
-  z-index: 1;
-  animation: titleAnimation 36s linear infinite 0s;
-  position: absolute;
-  background-color: rgba(51, 204, 204, 0.7);
-  color: white;
-  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, Arial, sans-serif;
-  opacity: 0;
-  padding: 6px 20px 6px 20px;
-  font-size: 18px; }
-  .slideshow li div h4 {
-    margin: 0px;
-    font-size: 40px;
-    font-weight: 200; }
-.slideshow li:nth-child(1) span {
-  background-image: url(../images/1.jpg); }
-.slideshow li:nth-child(2) span {
-  background-image: url(../images/2.jpg);
-  animation-delay: 6s; }
-.slideshow li:nth-child(3) span {
-  background-image: url(../images/3.jpg);
-  animation-delay: 12s; }
-.slideshow li:nth-child(4) span {
-  background-image: url(../images/4.jpg);
-  animation-delay: 18s; }
-.slideshow li:nth-child(5) span {
-  background-image: url(../images/5.jpg);
-  animation-delay: 24s; }
-.slideshow li:nth-child(6) span {
-  background-image: url(../images/6.jpg);
-  animation-delay: 30s; }
-.slideshow li:nth-child(1) div {
-  top: 54%;
-  left: 20%; }
-.slideshow li:nth-child(2) div {
-  animation-delay: 6s;
-  top: 50%;
-  right: 25%; }
-.slideshow li:nth-child(3) div {
-  animation-delay: 12s;
-  top: 37%;
-  left: 35%; }
-.slideshow li:nth-child(4) div {
-  animation-delay: 18s;
-  top: 40%;
-  right: 20%; }
-.slideshow li:nth-child(5) div {
-  animation-delay: 24s;
-  bottom: 30%;
-  left: 20%; }
-.slideshow li:nth-child(6) div {
-  animation-delay: 30s;
-  top: 47%;
-  right: 35%; }
-.slideshow header {
-  font-family: Segoe UI, Helvetica, Arial, sans-serif;
-  color: white;
-  font-size: 33px;
-  background-color: #33CCCC;
-  height: 225px;
-  width: 165px;
-  position: absolute;
-  right: 14%;
-  top: 70px; }
-  .slideshow header h3 {
+.slideshow {
+  margin-top: 0; }
+  .slideshow li span {
+    width: 100%;
+    height: 100%;
     position: absolute;
-    font-weight: 100;
-    bottom: 20px;
-    left: 14px;
-    margin-bottom: 0; }
+    top: 0px;
+    left: 0px;
+    color: transparent;
+    background-size: cover;
+    background-position: 50% 50%;
+    background-repeat: none;
+    opacity: 0;
+    z-index: 0;
+    animation: imageAnimation 36s linear infinite 0s; }
+  .slideshow li div {
+    z-index: 1;
+    animation: titleAnimation 36s linear infinite 0s;
+    position: absolute;
+    background-color: rgba(51, 204, 204, 0.7);
+    color: white;
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, Arial, sans-serif;
+    opacity: 0;
+    padding: 6px 20px 6px 20px;
+    font-size: 18px; }
+    .slideshow li div h4 {
+      margin: 0px;
+      font-size: 40px;
+      font-weight: 200; }
+  .slideshow li:nth-child(1) span {
+    background-image: url(../images/1.jpg); }
+  .slideshow li:nth-child(2) span {
+    background-image: url(../images/2.jpg);
+    animation-delay: 6s; }
+  .slideshow li:nth-child(3) span {
+    background-image: url(../images/3.jpg);
+    animation-delay: 12s; }
+  .slideshow li:nth-child(4) span {
+    background-image: url(../images/4.jpg);
+    animation-delay: 18s; }
+  .slideshow li:nth-child(5) span {
+    background-image: url(../images/5.jpg);
+    animation-delay: 24s; }
+  .slideshow li:nth-child(6) span {
+    background-image: url(../images/6.jpg);
+    animation-delay: 30s; }
+  .slideshow li:nth-child(1) div {
+    top: 54%;
+    left: 20%; }
+  .slideshow li:nth-child(2) div {
+    animation-delay: 6s;
+    top: 50%;
+    right: 25%; }
+  .slideshow li:nth-child(3) div {
+    animation-delay: 12s;
+    top: 37%;
+    left: 35%; }
+  .slideshow li:nth-child(4) div {
+    animation-delay: 18s;
+    top: 40%;
+    right: 20%; }
+  .slideshow li:nth-child(5) div {
+    animation-delay: 24s;
+    bottom: 30%;
+    left: 20%; }
+  .slideshow li:nth-child(6) div {
+    animation-delay: 30s;
+    top: 47%;
+    right: 35%; }
+  .slideshow header {
+    font-family: Segoe UI, Helvetica, Arial, sans-serif;
+    color: white;
+    font-size: 33px;
+    background-color: #33CCCC;
+    height: 225px;
+    width: 165px;
+    position: absolute;
+    right: 14%;
+    top: 70px; }
+    .slideshow header h3 {
+      position: absolute;
+      font-weight: 100;
+      bottom: 20px;
+      left: 14px;
+      margin-bottom: 0; }
 
+#company-info {
+  position: absolute;
+  top: 95%;
+  width: 100%;
+  padding: 15px;
+  margin: 0;
+  z-index: 2;
+  background-color: #363636;
+  background-color: rgba(41, 41, 41, 0.8);
+  color: lightgray;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, Arial, sans-serif; }
+
+@media (max-width: 500px) {
+  .slideshow li div {
+    left: 0 !important;
+    top: 69% !important;
+    right: 0 !important;
+    bottom: 6% !important;
+    height: 25%;
+    width: 100%; } }
 @keyframes imageAnimation {
   0% {
     opacity: 0;
