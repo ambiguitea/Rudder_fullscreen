@@ -1,0 +1,22 @@
+{
+  "name": "rudder_fullscreen",
+  "version": "1.0.0",
+  "description": "Rudder draft",
+  "main": "Default.html",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ambiguitea/Rudder_fullscreen.git"
+  },
+  "author": "Richard Wortham",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/ambiguitea/Rudder_fullscreen/issues"
+  },
+  "homepage": "https://github.com/ambiguitea/Rudder_fullscreen#readme",
+  "dependencies": {
+    "mongodb": "^2.2.27"
+  }
+}
