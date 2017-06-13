@@ -10,6 +10,6 @@ $(document).ajaxError(function(e, xhr, settings, err) {
 })
 
 $(document).on("click", "nav ul li", function() {
-    $.get("localhost:8000/Contact", {}, function (r) { console.log(r); $("#company-info").html(r); }, "text")
+    $.get("http://localhost:8000/" + $(this).attr("data-re"), {}, function (r) { console.log(r); $("#company-info").html(r); }, "text")
     
 })

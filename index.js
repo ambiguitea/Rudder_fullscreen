@@ -16,7 +16,11 @@ app.get("/", function(req, res) {
 })
 
 app.get("/Contact", function(req, res) {
-    res.send("Contact form goes here no?");
+    res.sendFile("Contact.html", {root: path.join(__dirname, "/public")});
+})
+
+app.get("/Courses", function(req, res) {
+    res.sendFile("Courses.html", {root: path.join(__dirname, "/public")});
 })
 
 app.listen(8000, function() {
