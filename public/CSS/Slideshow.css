@@ -4,7 +4,7 @@ To change this template file, choose Tools | Templates
 and open the template in the editor.
 */
 /* 
-    Created on : 29-Apr-2017, 10:11:10
+    Created on : 28-Jun-2017, 21:18:15
     Author     : richardwortham
 */
 .slideshow {
@@ -113,33 +113,6 @@ and open the template in the editor.
       left: 14px;
       margin-bottom: 0; }
 
-#company-info {
-  position: absolute;
-  top: 95%;
-  width: 100%;
-  padding: 15px;
-  margin: 0; }
-
-#company-info, nav {
-  z-index: 2;
-  background-color: #363636;
-  background-color: rgba(41, 41, 41, 0.8);
-  color: lightgray;
-  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, Arial, sans-serif; }
-
-nav {
-  position: absolute;
-  top: 40%;
-  right: 0; }
-  nav ul {
-    list-style: none;
-    padding-right: 15px;
-    text-align: right;
-    font-size: 18px; }
-    nav ul a {
-      text-decoration: none;
-      text-align: right; }
-
 @media (max-width: 500px) {
   .slideshow li div {
     left: 0 !important;
@@ -175,18 +148,4 @@ nav {
 .no-cssanimations .slideshow li span {
   opacity: 1; }
 
-#contact-form {
-  display: flex;
-  flex-wrap: wrap; }
-
-#contact-form label, #contact-form input, #contact-form div {
-  width: 45%;
-  margin: 18px 0; }
-#contact-form button {
-  height: 30px;
-  width: 90px; }
-
-#tbMsg {
-  height: 300px; }
-
-/*# sourceMappingURL=R.css.map */
+/*# sourceMappingURL=Slideshow.css.map */

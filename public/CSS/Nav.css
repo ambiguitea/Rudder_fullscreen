@@ -1,0 +1,67 @@
+/*
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+*/
+/* 
+    Created on : 28-Jun-2017, 21:18:59
+    Author     : richardwortham
+*/
+#company-info {
+  position: absolute;
+  top: 95%;
+  width: 100%;
+  padding: 15px;
+  margin: 0; }
+
+#downarrow-container {
+  width: 100%;
+  height: 10px;
+  position: absolute;
+  top: 93%;
+  text-align: center; }
+  #downarrow-container div {
+    width: 10%;
+    min-width: 80px;
+    height: 35px;
+    background-color: #33cccc;
+    background-color: rgba(51, 204, 204, 0.7);
+    z-index: 4;
+    position: absolute;
+    left: 45%; }
+  #downarrow-container div:hover {
+    background-color: #33cccc; }
+
+/*#company-info:before {
+    content: "Down arrow";
+    width: 100%;
+    height: 20px;
+    padding: 3px;
+    z-index: 3;
+    background-color: #252525;
+    
+}*/
+#company-info, nav {
+  z-index: 2;
+  background-color: #363636;
+  background-color: rgba(41, 41, 41, 0.8);
+  color: lightgray;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, Arial, sans-serif; }
+
+nav {
+  position: absolute;
+  top: 40%;
+  right: 0; }
+  nav ul {
+    list-style: none;
+    padding-right: 15px;
+    text-align: right;
+    font-size: 18px;
+    cursor: pointer; }
+    nav ul a {
+      text-decoration: none;
+      text-align: right; }
+    nav ul li:hover {
+      color: white; }
+
+/*# sourceMappingURL=Nav.css.map */
